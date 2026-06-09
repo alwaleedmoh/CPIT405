@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App 1 - To-Do List | ALWALEED ALHALAFI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="labs.html">Labs</a></li>
+      <li><a href="myworks.html">My Works</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="app-layout">
+  <aside class="app-sidebar">
+    <h3>About This App</h3>
+    <p>A simple To-Do List app built with HTML, CSS, and JavaScript.</p>
+    <p>Your tasks are saved in your browser using <strong>localStorage</strong> — they will still be here when you come back.</p>
+
+    <h3>Portfolio Links</h3>
+    <a href="myworks.html" class="btn">&larr; My Works</a>
+    <a href="app2.html" class="btn">View App 2</a>
+  </aside>
+
+  <section class="app-content">
+    <h2>To-Do List</h2>
+
+    <div class="todo-input-row">
+      <input type="text" id="taskInput" placeholder="Add a new task..." maxlength="120">
+      <button id="addBtn" type="button">Add</button>
+    </div>
+
+    <ul class="todo-list" id="taskList"></ul>
+
+    <p class="empty-state" id="emptyState">No tasks yet. Add one above!</p>
+
+    <div class="todo-footer" id="todoFooter" style="display:none;">
+      <span id="counter">0 of 0 completed</span>
+      <button class="link-btn" id="clearBtn" type="button">Clear completed</button>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <p>&copy; 2026 ALWALEED ALHALAFI - CPIT 405 Portfolio</p>
+</footer>
+
+<script src="app1.js"></script>
+</body>
+</html>

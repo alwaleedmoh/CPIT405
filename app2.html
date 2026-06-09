@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App 2 - Country Explorer | ALWALEED ALHALAFI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="labs.html">Labs</a></li>
+      <li><a href="myworks.html">My Works</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="app-layout">
+  <aside class="app-sidebar">
+    <h3>About This App</h3>
+    <p>Search and explore countries using the <strong>REST Countries</strong> API.</p>
+    <p>Data is fetched live from: <a href="https://restcountries.com" target="_blank">restcountries.com</a></p>
+
+    <h3>Portfolio Links</h3>
+    <a href="myworks.html" class="btn">&larr; My Works</a>
+    <a href="app1.html" class="btn">View App 1</a>
+  </aside>
+
+  <section class="app-content">
+    <h2>Country Explorer</h2>
+
+    <div class="search-row">
+      <input type="text" id="searchInput" placeholder="Type a country name (e.g. arab, japan, brazil)..." maxlength="60">
+      <button id="searchBtn" type="button">Search</button>
+    </div>
+
+    <div id="resultsArea">
+      <p class="status-msg">Try searching for a country above. For example: <em>arab</em>, <em>france</em>, or <em>india</em>.</p>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <p>&copy; 2026 ALWALEED ALHALAFI - CPIT 405 Portfolio</p>
+</footer>
+
+<script src="app2.js"></script>
+</body>
+</html>

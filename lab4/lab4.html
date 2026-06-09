@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Great Auto Parts - Order Form</title>
+    <style>
+        /* CSS Structure and Properties */
+        body {
+            font-family: "Times New Roman", Times, serif;
+            background-color: #ffffff;
+            color: #000000;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .form-container {
+            width: 100%;
+            max-width: 550px; /* Matches the narrow form proportion in the image */
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 12px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+
+        /* Applying styles to all input fields and textarea */
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="number"],
+        input[type="date"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            box-sizing: border-box; /* Ensures padding does not break width */
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: #333333;
+        }
+
+        /* Specific styling for the textarea height */
+        textarea {
+            height: 150px;
+            resize: vertical;
+            font-family: monospace; /* Matches the image's comment placeholder */
+        }
+
+        /* Submit Button Styling */
+        button[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #000000;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #333333;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h1>Great Auto Parts - Order Form</h1>
+
+    <form action="#" method="POST">
+        <div class="form-group">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        </div>
+
+        <div class="form-group">
+            <label for="make">Make:</label>
+            <input type="text" id="make" name="make" placeholder="Make" required>
+        </div>
+
+        <div class="form-group">
+            <label for="model">Model:</label>
+            <input type="text" id="model" name="model" placeholder="Model" required>
+        </div>
+
+        <div class="form-group">
+            <label for="year">Year:</label>
+            <input type="number" id="year" name="year" placeholder="Year" required>
+        </div>
+
+        <div class="form-group">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+
+        <div class="form-group">
+            <label for="sparePart">Spare Part:</label>
+            <input type="text" id="sparePart" name="sparePart" placeholder="Enter the spare part you need" required>
+        </div>
+
+        <div class="form-group">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" placeholder="Enter the quantity of the spare part you need" required>
+        </div>
+
+        <div class="form-group">
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" placeholder="Enter your comment"></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>

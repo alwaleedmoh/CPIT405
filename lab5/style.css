@@ -1,0 +1,66 @@
+body {
+    font-family: sans-serif;
+    background-color: #f8f9fa; /* Light grey background like the image */
+    padding: 40px;
+    margin: 0;
+}
+
+.dashboard-container {
+    background-color: #ffffff;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+h1 { margin: 0; font-size: 24px; }
+
+.filters {
+    margin-bottom: 15px;
+    display: flex;
+    gap: 5px;
+}
+
+input, select {
+    padding: 4px 8px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+/* Table Styling to match image */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #e0e0e0;
+}
+
+th {
+    background-color: #f2f2f2;
+    text-align: left;
+    padding: 12px;
+    border-bottom: 2px solid #ddd;
+    font-size: 14px;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+/* Dark Mode Logic */
+body.dark-mode {
+    background-color: #121212;
+}
+body.dark-mode .dashboard-container {
+    background-color: #1e1e1e;
+    color: white;
+}
+body.dark-mode th { background-color: #333; color: white; border-bottom: 2px solid #444; }
+body.dark-mode td { border-bottom: 1px solid #333; }
